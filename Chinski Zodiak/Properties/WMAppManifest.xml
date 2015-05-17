@@ -5,7 +5,7 @@
     <Language code="pl-PL" />
     <Language code="qps-ploc" />
   </Languages>
-  <App xmlns="" ProductID="{205a137f-0bf8-4e4d-bcab-42f0295f2c0d}" Title="Chińskie Znaki Zodiaku" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="AdaNa" Description="Aplikacja z tradycyjnym chińskim zodiakiem" Publisher="AdaNa" PublisherID="{22bcc68e-85a2-4aba-ac19-2ebcabeb1059}">
+  <App xmlns="" ProductID="{205a137f-0bf8-4e4d-bcab-42f0295f2c0d}" Title="ChineseZodiac" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="AdaNa" Description="Sprawdz swój chiński znak zodiaku." Publisher="AdaNa" PublisherID="{22bcc68e-85a2-4aba-ac19-2ebcabeb1059}">
     <IconPath IsRelative="true" IsResource="false">ikona.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
@@ -20,7 +20,7 @@
           <SmallImageURI IsRelative="true" IsResource="false">ikona.png</SmallImageURI>
           <Count>0</Count>
           <BackgroundImageURI IsRelative="true" IsResource="false">ikona.png</BackgroundImageURI>
-          <Title>Chinski Zodiak</Title>
+          <Title>ChineseZodiac</Title>
           <BackContent>
           </BackContent>
           <BackBackgroundImageURI>

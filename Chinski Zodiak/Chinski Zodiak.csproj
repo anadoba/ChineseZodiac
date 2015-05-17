@@ -147,6 +147,9 @@
     <Compile Include="Wyznacz.xaml.cs">
       <DependentUpon>Wyznacz.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Znak.xaml.cs">
+      <DependentUpon>Znak.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Znaki.xaml.cs">
       <DependentUpon>Znaki.xaml</DependentUpon>
     </Compile>
@@ -213,6 +216,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Wyznacz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Znak.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

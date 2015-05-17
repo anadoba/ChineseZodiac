@@ -46,7 +46,7 @@
         
         </Grid>
 
-        <Button x:Name="Sprawdz" Grid.Row="2" Content="SPRAWDZ" FontSize="70" FontWeight="Bold" Click="Sprawdz2" Background="Black"/>
+        <Button x:Name="Sprawdz" Grid.Row="2" Content="SPRAWDZ" FontSize="70" FontWeight="Bold" Click="Sprawdz_Click" Background="Black"/>
 
        
 

@@ -19,62 +19,62 @@ namespace Chinski_Zodiak
 
         private void Szczur_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Szczur.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Znak.xaml?znak=" + "Szczur", UriKind.Relative));
         }
 
         private void Bawol_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Bawol.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Znak.xaml?znak=" + "Bawół", UriKind.Relative));
         }
 
         private void Tygrys_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Tygrys.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Znak.xaml?znak=" + "Tygrys", UriKind.Relative));
         }
 
         private void Krolik_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Krolik.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Znak.xaml?znak=" + "Królik", UriKind.Relative));
         }
 
         private void Smok_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Smok.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Znak.xaml?znak=" + "Smok", UriKind.Relative));
         }
 
         private void Waz_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Waz.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Znak.xaml?znak=" + "Wąż", UriKind.Relative));
         }
 
         private void Kon_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Kon.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Znak.xaml?znak=" + "Koń", UriKind.Relative));
         }
 
         private void Koza_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Koza.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Znak.xaml?znak=" + "Koza", UriKind.Relative));
         }
 
         private void Malpa_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Malpa.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Znak.xaml?znak=" + "Małpa", UriKind.Relative));
         }
 
         private void Kogut_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Kogut.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Znak.xaml?znak=" + "Kogut", UriKind.Relative));
         }
 
         private void Pies_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Pies.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Znak.xaml?znak=" + "Pies", UriKind.Relative));
         }
 
         private void Swinia_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Swinia.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Znak.xaml?znak=" + "Świnia", UriKind.Relative));
         }
     }
 }
