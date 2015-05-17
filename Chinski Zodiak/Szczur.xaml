@@ -1,0 +1,40 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Chinski_Zodiak.Szczur"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent" Margin="10,0,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Szczur" Foreground="Magenta" Grid.Row="0" TextAlignment="Center" FontSize="60" FontWeight="Black"/>
+        
+
+        <ScrollViewer Grid.Row="1">
+            <StackPanel>
+
+                <Image Source="/znaki/szczur.png"/>
+
+                <TextBlock Text="Bystry, inteligentny i niebywale przebiegły. Działa po cichu, ale skutecznie. Potrafi wybrnąć z największych kłopotów, a każdą sytuację obrócić na swoją korzyść." TextWrapping="Wrap" FontSize="30" Foreground="Magenta"/>
+                <TextBlock Text="Osoba urodzona w roku Szczura to indywidualista. Szczur jest zwykle towarzyski, lubi konwersację, związki, spotkania, przyjęcia, święta i wydarzenia społeczne. Ma umysł intuicyjny i racjonalny, co czyni z niego dociekliwego nonkonformistę. Osoba-Szczur jest często prowokująca, krytyczna, wyrachowana, wybredna i defensywna. Posiada wielki dar wzbudzania w innych zaufania do siebie. Ludzie zwierzają się jej ze swoich słabości, co czasami wykorzystuje dla swoich korzyści, dla zabezpieczenia własnej osoby. Ma dobrego nosa do interesów, szczególnie przy prowadzeniu własnego biznesu. Jest osobą pełną wdzięku i czarującą, ale również podejrzliwą i przebiegłą. Wie, jak ukryć swoje intencje, jak używać magnetycznej siły uwodzenia, jak przekonywać i manipulować przeciwnikami, aby nikt tego nie zauważył i w końcu osiągać cel. Jest przebiegłym strategiem, zdolnym do działania z zimną krwią. Z drugiej strony nie znosi, gdy wykorzystuje się ją, zdradza czy odrzuca. Szczur ma dar znajdowania prostych, praktycznych rozwiązań dla najbardziej zagmatwanych sytuacji i problemów. Nigdy nie poddaje się w obliczu trudności. Problemy stymulują jego wyobraźnię oraz wyzwalają potrzebę upustu energii i sił umysłu. Szczur nienawidzi rutyny i codziennego kieratu. Jest skrupulatny i nie spuszcza oka ze swojej własności. Gromadzi pieniądze, zarządza i brzydzi się marnotrastwem. Jest szczodry, jeśli chodzi o swego partnera, dzieci czy ludzi z jego kręgu, ale rzadko bywa ekstrawagancki. Młode Szczury często flirtują, ale gdy już zdecydują się na kogoś, darzą wybraną osobę głębokim uczuciem. Szczur nie jest zbyt wylewny, niełatwo ujawnia swoje uczucia, ale jest bardzo wrażliwy, zaangażowany, zaborczy, zazdrosny i lojalny w zobowiązaniach." TextWrapping="Wrap" FontSize="25" Foreground="Magenta" Margin="0,20,0,0"/>
+
+                <TextBlock Text="Źródło: wrozby-anny.eu" FontSize="30" Foreground="Magenta" Margin="0,20,0,0"/>
+            </StackPanel>
+        </ScrollViewer>
+        
+    </Grid>
+
+</phone:PhoneApplicationPage>

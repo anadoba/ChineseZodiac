@@ -1,0 +1,63 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Chinski_Zodiak.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ctrl="clr-namespace:RateMyApp.Controls;assembly=RateMyApp"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/Resources/tlo.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="ContentPanel" Grid.Row="0" Margin="10,30,10,-5" Background="#3F000000">
+            <TextBlock Text="Witaj w świecie orientu!" Margin="30,0,0,5" FontSize="25" FontWeight="SemiBold" Foreground="White"/>
+            <TextBlock Text="Horoskop chiński opiera się w całości na tamtejszym kalendarzu, a więc pełen cykl zodiakalny trwa w takim przypadku 12 lat." FontSize="22" TextWrapping="Wrap" FontWeight="SemiBold" Foreground="White" Margin="5,0,5,0"/>
+            <TextBlock Text="Wierzy się, że opiekę nad ludźmi sprawuje  12 zwierząt. Każde z nich posiada odmienne cechy, którymi obdarzane są osoby urodzone pod znakiem danego stworzenia." TextWrapping="Wrap" FontSize="22" FontWeight="SemiBold" Foreground="White" Margin="5,0,5,0"/>
+            <TextBlock Text="Sprawdź swój chiński zodiak już teraz!" Margin="10,20,0,0" FontWeight="Bold" FontSize="22" Foreground="White"/>
+        </StackPanel>
+
+        <Grid x:Name="Przyciski" Grid.Row="2" Margin="0,20,0,0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="Wyznacz" Grid.Row="0" Content="Jaki jest mój chiński znak zodiaku?" Click="Wyznacz_Click" FontSize="27" Background="Black"/>
+            <Button x:Name="Znaki" Grid.Row="1" Content="Przeglądaj cały orientalny zodiak" Click="Znaki_Click" FontSize="27" Background="Black"/>
+        </Grid>
+
+        <ctrl:FeedbackOverlay x:Name="FeedbackOverlay"
+                              Grid.RowSpan="3"
+                              FeedbackTo="anadoba@windowslive.com"
+                              ApplicationName="Chinskie Znaki Zodiaku"
+                              CompanyName="AdaNa"
+                              RatingTitle="Lubisz tą aplikację?"
+                              RatingMessage1="Byłoby nam miło, gdybyś zechciał ją ocenić. Oceniając tą aplikację przyczyniasz się do jej popularności."
+                              RatingMessage2=""
+                              RatingYes="Oceń"
+                              RatingNo="Nie, dziękuję"
+                              FeedbackTitle="Może masz sugestie zmian?"
+                              FeedbackMessage1="Jesteśmy otwarci na propozycje użytkowników."
+                              FeedbackYes="Napisz"
+                              FeedbackNo="Nie, dziękuję"
+                              FeedbackSubject="Chinskie Znaki Zodiaku - poprawki"/>
+        
+    </Grid>
+
+</phone:PhoneApplicationPage>

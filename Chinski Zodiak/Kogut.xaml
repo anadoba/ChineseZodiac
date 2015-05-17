@@ -1,0 +1,38 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Chinski_Zodiak.Kogut"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent" Margin="10,0,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Kogut" Foreground="Magenta" Grid.Row="0" TextAlignment="Center" FontSize="60" FontWeight="Black"/>
+
+        <ScrollViewer Grid.Row="1">
+            <StackPanel>
+
+                <Image Source="/znaki/kogut.png"/>
+
+                <TextBlock Text="Ludzie spod tego znaku wiodą niezwykłe, barwne życie. Snują szalone plany i nie wahają się ich realizować. A wszystko po to, by na ich widok inni pieli z zachwytu." TextWrapping="Wrap" FontSize="30" Foreground="Magenta"/>
+                <TextBlock Text="Starożytni Chińczycy, twórcy zodiaku stosowanego powszechnie w Azji i na Dalekim Wschodzie, przypisali osobom urodzonym w roku Koguta takie charakterystyczne cechy, jakie my, ludzie Zachodu, sami byśmy wybrali, gdyby ten ptak znajdował się w naszym zodiaku. Tak więc osoba urodzona w roku Koguta jest dumna, zdeterminowana, czasami niezdecydowana, arogancka, szczera, lojalna i bezpośrednia, ale jednocześnie brak jej wyczucia, taktu, subtelności i dyplomacji. Najczęściej mówi to, co myśli, bez owijania w bawełnę. Zmierza prosto do celu ryzykując, że kogoś zaszokuje lub zrani czyjeś uczucia. Pomimo pewnej gruboskórności i braki wrażliwości, Koguty mają też bardziej wysublimowaną stronę swojej natury. Jeżeli należy wykazać się rozwagą i spostrzegawczością, możemy być pewni ich bystrego oka i wyczulenia na szczegóły, które umkną uwadze innych. Jednak ten dar obserwacji nie czyni ich obiektywnymi: dla nich często 'zobaczyć, znaczy uwierzyć'. Koguty nie tylko wierzą wyłącznie w to, co widzą, lecz też widzą to, w co wierzą, albo wydaje im się, że widzą. Nie potrafią sprzeczać się, czy też być w konflikcie z innymi, dlatego z łatwością przekonują same siebie, że są jedyne, które dostrzegają prawdziwy obraz rzeczywistości. Niełatwo otworzyć im oczy lub nakłonić do zmiany stanowiska, gdyż zachowują się jak ślepcy. Pomijając fakt, że uwielbiają pochlebstwa, Koguty nie są aż tak powierzchowne, jak mogłoby nam wydawać się. Odznaczają się odwagą, nie zwlekają z wystąpieniem w obronie słusznej sprawy, podjęciem wyzwania, wypełnieniem misji, czy wywiązaniem się z trudnego zadania. Dysponują tak wielkimi zasobami energii, że trudno dotrzymać im kroku. Czerpią energię z przeświadczenia, że są najlepsze i najczęściej w końcu musimy przyznać im rację. Chyba, że zapędzą się zbyt daleko w zacietrzewieniu, zarozumiałości czy tyranizowaniu otoczenia. Jednak pod tą maską kryje się ktoś, kto w głębi serca niepokoi się i zadręcza, szuka zachęty, odrobiny podziwu i pochwały. Słabą psychologiczną konstrukcję rekompensują siłą moralną, przekonaniem o słuszności swoich działań, pracowitością, dobrą organizacją, metodycznością i punktualnością. Wszystko to czyni z nich osoby mało tolerancyjne, bezkompromisowe, wymagające wiele zarówno od siebie, jak i od innych. Ich pewność, że zawsze mają rację i mogą służyć za przykład, bywa irytująca. Choć są uporządkowane i stwarzają wrażenie, jakby nigdy nie pozwalały sobie na słabość, nie udaje się im do końca ukryć niestabilnej strony charakteru, co wychodzi rażąco na jaw zwłaszcza w życiu uczuciowym. Chociaż Kogutu uwielbiają niepodzielnie rządzić w domu, w otoczeniu najbliższych nie przepuszvzą nadarzającej się okazji do wplątania się w przygodę, aby udowodnić sobie, że są najlepsze i wciąż potrafią zwyciężać. Niestety dla tych, których kochają, mogą okazać się zaborczymi tyranami, nie znoszącymi sprzeciwu." TextWrapping="Wrap" FontSize="25" Foreground="Magenta" Margin="0,20,0,0"/>
+
+                <TextBlock Text="Źródło: wrozby-anny.eu" FontSize="30" Foreground="Magenta" Margin="0,20,0,0"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+
+</phone:PhoneApplicationPage>

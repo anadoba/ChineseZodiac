@@ -1,0 +1,39 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Chinski_Zodiak.Waz"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent" Margin="10,0,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Wąż" Foreground="Magenta" Grid.Row="0" TextAlignment="Center" FontSize="60" FontWeight="Black"/>
+
+        <ScrollViewer Grid.Row="1">
+            <StackPanel>
+
+                <Image Source="/znaki/waz.png"/>
+
+                <TextBlock Text="Porusza się z gracją, mówi cicho, lecz dobitnie, działa bez rozgłosu, ale za to skutecznie." TextWrapping="Wrap" FontSize="30" Foreground="Magenta"/>
+                <TextBlock Text="Osoby urodzone w roku Węża nigdy nie zdążają prostą drogą. Kluczą, obchodzą przeszkody, żywią się ciepłem słońca, ziemią i skałą; trawią bardzo powoli, smakując zdobycz, którą właśnie połknęli. Zapewniają sobie maksimum komfortu przy minimum wysiłku i cieszą się życiem w każdej postaci. Działanie nie jest mocną stroną urodzonych w roku Węża. Jednak pomimo, że żyją szczęśliwie stosując uniki i nie dając się zdominować, mogą wybuchnąć. Ich atak jest przerażający szczególnie, gdy bronią domu, dzieci lub jednej z osób, które są dla niech drogie i bliskie. Węże uczynią wszystko, aby zaspokoić swoje ambicje oraz pragnienia i na pewno nie należy ich przed tym powstrzymywać. Węże lubią tajemnice i najlepiej wiedzą, jak ich dochowywać. Są skryte, sceptyczne, ufają tylko własnemu nieomylnemu instynktowi i magicznej intuicji. Posiadają umiejętność uwodzenia i czarowania. Eleganckie, seksowne, bystre, wyrafinowane i wykazujące się właściwym osądem rzeczy, uzbrojone w magnetyczny uśmiech i przeszywające spojrzenie, hipnotyzują osoby, z którymi rozmawiają, zarówno swoich partnerów, jak i oponentów. Wąż lubi egzekwować należną mu władzę i wpływy, a także fascynować sobą innych. Osoby spod znaku Węża uwielbiają być adorowane i kochane – bezwarunkowo. Niezauważalnie przejmują kontrolę nad innymi. Są ambitne, potrafią wykazać się wyjątkowym opanowaniem, które sprawia, że niełatwo tracą głowę. Ich wewnętrzna siła, wynikająca bardziej z zasobów psychicznych, niż fizycznych, jest niezwykle głęboka. Mają zdolność koncentrowania ukrytych źródeł energetycznych na pojedynczym celu. Jeżeli Wąż naprawdę czegoś zapragnie, bardzo rzadko zdarza się, że tego nie osiąga. Węże niezbyt miło przyjmują rady od innych. Same wiedzą, co należy zrobić i nienawidzą, jeżeli inni ludzie – nieproszeni – mieszają się w ich sprawy. Ponadto ich badawczy wzrok i bystry umysł umożliwiają im dokonywanie bardzo trafnych osądów; czasami potrafią przewidywać zdarzenia i zachowania osób, z którymi mają do czynienia. Wyjątkowa zmysłowość sprawia, że są uwodzicielskie i pociągające. Czarują, czasami mimo woli, ale zawsze ze świadomością zainteresowania, jakie wzbudzają. Chcą być kochane, uwielbiane i pożądane. Skrajna chęć posiadania czyni z Wężów osoby wierne w związkach. W miłości pragną wyłączności, są zazdrosne. Wiedzą, jak stać się tak niezastąpionym dla swego partnera, aby nie był on w stanie żyć i oddychać bez swego Węża." TextWrapping="Wrap" FontSize="25" Foreground="Magenta" Margin="0,20,0,0"/>
+
+                <TextBlock Text="Źródło: wrozby-anny.eu" FontSize="30" Foreground="Magenta" Margin="0,20,0,0"/>
+            </StackPanel>
+        </ScrollViewer>
+        
+    </Grid>
+
+</phone:PhoneApplicationPage>

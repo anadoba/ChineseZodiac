@@ -1,0 +1,41 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Chinski_Zodiak.Swinia"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent" Margin="10,0,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Świnia" Foreground="Magenta" Grid.Row="0" TextAlignment="Center" FontSize="60" FontWeight="Black"/>
+
+        <ScrollViewer Grid.Row="1">
+            <StackPanel>
+
+                <Image Source="/znaki/swinia.png"/>
+
+                <TextBlock Text="Nie grzeszy wyobraźnią, ale nigdy nie przestaje wierzyć w ludzi. Z pozoru słaba i delikatna, ma złote i bardzo odważne serce." TextWrapping="Wrap" FontSize="30" Foreground="Magenta"/>
+                <TextBlock Text="Świnia w Chinach nie kojarzy się źle, przeciwnie, uważana jest tam za zwierzę przynoszące bogactwo i szczęście. Chińczycy specjalnie planują narodziny dzieci na rok Świni. Łagodna, czarująca i pełna wdzięku, bywa zbyt łatwowierna. Jeśli ktoś ją skrzywdzi, cierpi, ale nie chowa urazy. Wciąż wierzy, że to tylko wypadek przy pracy, a ludzie są z gruntu dobrzy. Zawsze też jest skłonna dać winowajcy drugą szansę. 
+Z wiekiem, kiedy 'wypadków' zdarza się coraz więcej, Świni zaczyna świtać myśl, że bywa wykorzystywana. Może wtedy stać się nieco zgorzkniała i cyniczna, zwłaszcza gdy jej żywiołem jest Metal. Nigdy jednak nie pogodzi się z tym, że dobroć nie popłaca. Wszystkie problemy skłonna jest rozwiązywać na drodze pokojowej. Nienawidzi kłótni. Zawsze też pierwsza zrobi krok ku zgodzie. Do każdego wychodzi z sercem na dłoni. 
+Jest otwarta i tolerancyjna. Rozumie, że inni mogą mieć wady. Ma mnóstwo znajomych, ale przyjaciół dobiera bardzo starannie. Niezawodna intuicja, największa u Świń z żywiołu Wody, od razu podpowiada jej, czy ktoś jest wart bliższego poznania, czy nie warto zawracać nim sobie głowy. Potrafi się znaleźć w każdej sytuacji i dlatego bardzo wielu ludzi darzy ją sympatią. " TextWrapping="Wrap" FontSize="25" Foreground="Magenta" Margin="0,20,0,0"/>
+
+                <TextBlock Text="Źródło: astromagia.pl" FontSize="30" Foreground="Magenta" Margin="0,20,0,0"/>
+            </StackPanel>
+        </ScrollViewer>
+        
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,39 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Chinski_Zodiak.Kon"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent" Margin="10,0,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Koń" Foreground="Magenta" Grid.Row="0" TextAlignment="Center" FontSize="60" FontWeight="Black"/>
+
+        <ScrollViewer Grid.Row="1">
+            <StackPanel>
+
+                <Image Source="/znaki/kon.png"/>
+
+                <TextBlock Text="Bez przerwy gdzieś goni. Kocha podróże, zabawę, imprezy i przygody." TextWrapping="Wrap" FontSize="30" Foreground="Magenta"/>
+                <TextBlock Text="Osoba urodzona w roku Konia tryska energią, jest zawsze dyspozycyjna, ma w sobie ducha walki, ale jednocześnie jest delikatna, elegancka i wyrafinowana. Pragnie zabłysnąć, dać się zauważyć i odnieść sukces towarzyski. Inteligentna i elokwentna, wstarta subtelną siłą przekonywania, wzbudza sympatię i admirację na równi z zazdrością i wrogością. Konie cenią ponad wszystko rozmowę, kontakty i związki towarzyskie, choć potrafią być zmienne i kapryśne z powodu obawy przed ograniczeniem. Boją się, że inni mogą wkroczyć na terytorium, które oni uznali już za ciasne dla nich samych lub że zostaną pozbawione swojej niezależności. Mają potrzebę zmian, pragną przestrzeni i podróży, a także rozszerzania swoich horyzontów – zaspokojenia ciekawości, dania ujścia impulsom, które czasami są niepohamowane. Ogniste, porywcze, dzikie, niekontrolowane i nieprzewidywalne osoby-Konie mogą zmieniać swój nastrój błyskawicznie – ukazują się nagle jako spokojne, beznamiętne, wyciszone, pełne wdzięku i humoru, atrakcyjne i nieodgadnione. Niestety, to tylko krótkotrwały spokój przed burzą, ponieważ Konie muszą wzniecać kłótnie, być nadaktywne, choć nie zawsze w sposób konstruktywny; chyba, że jest jakiś cel do osiągnięcia, sytuacja wymaga szybkiej decyzji, chcą znaleźć się w centrum zainteresowania lub stawić czoła wyzwaniu. Konie są najlepsze w dziedzinach życia wymagających improwizacji, natychmiastowego oddania się całym sercem sprawie, radzenia sobie z kilkoma rzeczami równocześnie i zdobycia się na maksymalny wysiłek w krótkim czasie. Im pilniejsza jest inicjatywa, jaką muszą podjąć lub działania, które trzeba wykonać, tym bardziej czują się jak w domu. Nie znoszą sytuacji, które przeciągają się w nieskończoność. Chcą znać wyniki tak szybko, jak tylko jest to możliwe. Tak więc motywuje je tylko intensywność chwili, w żadnym razie nie czas trwania, kontynuacja, planowanie i pomysły na dłuższą metę. Pomimo swojej lojalności Konie nie są zbyt stałe w uczuciach. W miłości oddają duszę oraz ciało i chociaż w danym momencie są szczere, nie mogą znieść chłodnego lub nudnego związku i rutyny życia we dwoje. Codziennie musząc zuć namiętność, uwodzić, być uwodzone, zaskakiwane, zadziwiane; zdobywać, pozwolić duchowi lecieć do wspanialszego królestwa, świata bez granic, w którym mogłyby biec swobodnie, bez zatrzymywania się. Tak więc gdy poczują sięz nudzone, uciekają i szukają nowej zdobyczy, pasji, która – są o tym przekonane – będzie trwała wiecznie. Szukają miłości przez duże M. Koń w chińskim zodiaku galopuje w pogoni za miłością niemożliwą, wymarzonym romansem albo po prostu w poszukiwaniu siebie." TextWrapping="Wrap" FontSize="25" Foreground="Magenta" Margin="0,20,0,0"/>
+
+                <TextBlock Text="Źródło: wrozby-anny.eu" FontSize="30" Foreground="Magenta" Margin="0,20,0,0"/>
+            </StackPanel>
+        </ScrollViewer>
+        
+    </Grid>
+
+</phone:PhoneApplicationPage>

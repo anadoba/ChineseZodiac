@@ -1,0 +1,39 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Chinski_Zodiak.Smok"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent" Margin="10,0,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Smok" Foreground="Magenta" Grid.Row="0" TextAlignment="Center" FontSize="60" FontWeight="Black"/>
+
+        <ScrollViewer Grid.Row="1">
+            <StackPanel>
+
+                <Image Source="/znaki/smok.png"/>
+
+                <TextBlock Text="Niech drżą słabi, tchórzliwi i chwiejni! Nadchodzi Smok – potężny, odważny, pewny siebie." TextWrapping="Wrap" FontSize="30" Foreground="Magenta"/>
+                <TextBlock Text="Osoba urodzona w roku Smoka ma styl, wdzięk, magnetyzm i osobowość – nigdy nie przechodzi niezauważona. Smoki są oportunistami, ale otwartymi na trendy w myśleniu i modzie oraz na nowe idee. Mają talent do zaskakiwania innych przejmowaniem zasad i koncepcji, które – jeszcze nie rozwinięte lub w fazie planowania – doprowadzają do realizacji jako pierwsi, stając się w ten sposób ich autorami. Pomimo że Smoki zwykle bardzo głęboko osadzone są w przeszłości, którą szanują, a nawet admirują, zawsze starają się kierować w stronę przyszłości i ewoluować. Często zwlekają, poszukują i eksperymentują, ale jeżeli już dokonają wyboru, trzymają się tego, co zamierzyły – siłą ducha, woli i godnym podziwu przekonaniem. Co więcej, Smoki gustują w sytuacjach skandalizujących, wyzwaniach, wyczynach bojowych i spektaklach. Lubią przyciągać uwagę i wzbudzać podziw. Mają wyczucie ceremoniału i oryginalność, które czasami bywają przesadne, ostentacyjne lub prowokujące. Chcą być poznawane, lecz odkrywają się powierzchownie, maskując wewnętrzną niepewność, niezdolność wejścia głębiej w materię rzeczy i podstawowy niepokój, które sprawiają, że stale muszą być czymś zajęte, włączać się we wszystko, co się dzieje, przyjmują postawę roszczeniową i są niecierpliwe, drażliwe, wybuchowe. Słowem – marnują energię. Po wpakowaniu się po uszy w przedsięwzięcie, które okazuje się dla nich nie do udźwignięcia, czasami wycofują się. Smoki, podobnie jak Barany, wykazują często ogromny entuzjazm. Wychodzą śmiało naprzeciw trudnościom zapewniając, że to nic takiego, aż do momentu, gdy niespodziewanie idzie coś nie tak. Wtedy reagują bardzo gwałtownie. Wybuchy wściekłości Smoka są krótkie, ale przerażające i destrukcyjne. Można je porównać do trzęsienia ziemi. Nie mogą bowiem znieść, gdy coś zatrzymuje je na drodze. Gdyby Smoki spędzały mniej czasu na wprawianiu innych w bezwarunkowy podziw, na dążeniu do oryginalności, osiąganiu i byciu jednostką niezależną, a zwracały więcej uwagi na punkt widzenia innych ludzi, ponosiłyby mniej porażek. Smoki mają szczęście dzięki entuzjastycznemu nastawieniu i ognistemu temperamentowi, co sprawia, że zdarzenia rozwijają się w obranym przez nie kierunku. Tak więc, gdy podejmują walkę w słusznej sprawie, można być pewnym, że odniosą sukces mimo, iż inni ponieśli porażkę. Oczywiście Smoki uwielbiają romanse i przeżywają je z nieprzeciętną, niszczącą pasją, z ryzykownym i dramatycznym scenariuszem. Chcą być kochane w sposób szalony, wyjątkowy i wyłączny. Potrzebują pochlebstw, ale równie mocno chcą żywić głęboki szacunek do swojego partnera." TextWrapping="Wrap" FontSize="25" Foreground="Magenta" Margin="0,20,0,0"/>
+
+                <TextBlock Text="Źródło: wrozby-anny.eu" FontSize="30" Foreground="Magenta" Margin="0,20,0,0"/>
+            </StackPanel>
+        </ScrollViewer>
+        
+    </Grid>
+
+</phone:PhoneApplicationPage>

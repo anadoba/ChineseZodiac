@@ -1,0 +1,41 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Chinski_Zodiak.Koza"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent" Margin="10,0,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Koza" Foreground="Magenta" Grid.Row="0" TextAlignment="Center" FontSize="60" FontWeight="Black"/>
+
+        <ScrollViewer Grid.Row="1">
+            <StackPanel>
+
+                <Image Source="/znaki/koza.png"/>
+
+                <TextBlock Text="Ludzie Kozy są eleganccy i uroczy, mają świetne wyczucie barw i stylu, zwłaszcza jeśli ich żywiołem jest Drzewo." TextWrapping="Wrap" FontSize="30" Foreground="Magenta"/>
+                <TextBlock Text="Ludzie Kozy są eleganccy i uroczy, mają świetne wyczucie barw i stylu, zwłaszcza jeśli ich żywiołem jest Drzewo. Są ozdobą każdego towarzystwa, choć nie lubią skupiać na sobie uwagi. Wrażliwa Koza kocha przyrodę i wszystkie zwierzęta. Nie zabije nawet muchy czy komara. Od najmłodszych lat pociechy spod tego znaku znoszą do domu bezdomne kotki, pieski i ptaszki ze złamanymi skrzydłami. Chętnie przebywa na łonie natury, marzy o małym domku na wsi i gromadce dzieci. 
+Ma bardzo bogatą wyobraźnię. Małe Kozy kochają bajki, nieustannie fantazjują o wróżkach i elfach, mają wymyślonych przyjaciół. Jeśli w dodatku urodziły się w żywiole Wody, wyrastają z nich marzyciele i artyści. Przedstawiciele tego znaku zostają malarzami, poetami, kompozytorami, projektantami mody. A nawet jeśli od ósmej do szesnastej sortują listy na poczcie, w domowym zaciszu na pewno coś tworzą. 
+Pragną przede wszystkim poczucia bezpieczeństwa i obawiają się ryzyka. To najważniejsza sprawa zwłaszcza dla Kóz z żywiołu Ziemi. Decyzje podejmują po namyśle, a wydatki planują z ołówkiem w ręku. Mimo ostrożności czasem gubi je dobre serce. Łatwo wziąć je na litość, są więc na celowniku wielu wyrachowanych oszustów. Z drugiej strony mają niesamowite szczęście i przyjaciół, na których pomoc zawsze mogą liczyć." TextWrapping="Wrap" FontSize="25" Foreground="Magenta" Margin="0,20,0,0"/>
+
+                <TextBlock Text="Źródło: astromagia.pl" FontSize="30" Foreground="Magenta" Margin="0,20,0,0"/>
+            </StackPanel>
+        </ScrollViewer>
+        
+    </Grid>
+
+</phone:PhoneApplicationPage>
