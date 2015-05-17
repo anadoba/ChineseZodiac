@@ -95,54 +95,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Bawol.xaml.cs">
-      <DependentUpon>Bawol.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Kogut.xaml.cs">
-      <DependentUpon>Kogut.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Kon.xaml.cs">
-      <DependentUpon>Kon.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Koza.xaml.cs">
-      <DependentUpon>Koza.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Krolik.xaml.cs">
-      <DependentUpon>Krolik.xaml</DependentUpon>
-    </Compile>
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Malpa.xaml.cs">
-      <DependentUpon>Malpa.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pies.xaml.cs">
-      <DependentUpon>Pies.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\AppResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Smok.xaml.cs">
-      <DependentUpon>Smok.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Swinia.xaml.cs">
-      <DependentUpon>Swinia.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Szczur.xaml.cs">
-      <DependentUpon>Szczur.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Tygrys.xaml.cs">
-      <DependentUpon>Tygrys.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Waz.xaml.cs">
-      <DependentUpon>Waz.xaml</DependentUpon>
     </Compile>
     <Compile Include="Wyznacz.xaml.cs">
       <DependentUpon>Wyznacz.xaml</DependentUpon>
@@ -159,59 +123,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="Bawol.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Kogut.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Kon.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Koza.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Krolik.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Malpa.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Menu.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pies.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Smok.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Swinia.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Szczur.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Tygrys.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Waz.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
