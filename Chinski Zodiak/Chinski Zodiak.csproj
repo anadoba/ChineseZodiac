@@ -113,7 +113,6 @@
     </Compile>
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
-    <Compile Include="var.cs" />
     <Compile Include="Wyznacz.xaml.cs">
       <DependentUpon>Wyznacz.xaml</DependentUpon>
     </Compile>
