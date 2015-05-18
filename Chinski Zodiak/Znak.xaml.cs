@@ -21,11 +21,13 @@ namespace Chinski_Zodiak
             InitializeComponent();
         }
 
+        private String znak = "";
+        private ZnakDao znakDao = new ZnakDao();
+
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-
-            String znak = "";
 
             if (NavigationContext.QueryString.TryGetValue("znak", out znak))
             {
@@ -48,9 +50,17 @@ namespace Chinski_Zodiak
 
                 Ikona.Source = new BitmapImage(new Uri("/znaki/" + znak + ".png", UriKind.Relative));
 
-                string uriZodiaku = "http://przewodnikduchowy.pl/astrologia-chinska/chinski-znak-zodiaku-" + znak;
-                HttpWebRequest request = (HttpWebRequest) HttpWebRequest.Create(uriZodiaku);
-                request.BeginGetResponse(GetOpisZnaku, request);
+
+                if (znakDao.CzyZnakIstnieje(znak))
+                {
+                    Opis.Text = znakDao.WezOpis(znak);
+                }
+                else
+                {
+                    string uriZodiaku = "http://przewodnikduchowy.pl/astrologia-chinska/chinski-znak-zodiaku-" + znak;
+                    HttpWebRequest request = (HttpWebRequest) HttpWebRequest.Create(uriZodiaku);
+                    request.BeginGetResponse(GetOpisZnaku, request);
+                }
             }
         }
 
@@ -83,8 +93,10 @@ namespace Chinski_Zodiak
                                 licznik++;
                             }
 
-                            Opis.Text = opisZnaku.ToString();
 
+                            znakDao.WstawZnak(new Model.Znak(znak, opisZnaku.ToString()));
+
+                            Opis.Text = znakDao.WezOpis(znak);
                         });
                     }
                 }

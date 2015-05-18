@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
 using System.Resources;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Markup;
 using System.Windows.Navigation;
+using Windows.Storage;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Chinski_Zodiak.Resources;
+using SQLite;
 
 namespace Chinski_Zodiak
 {
@@ -58,6 +62,31 @@ namespace Chinski_Zodiak
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
             }
 
+
+            string dbPath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "db.sqlite");
+            if (!FileExists("db.sqlite").Result)
+            {
+                using (var db = new SQLiteConnection(dbPath))
+                {
+                    db.CreateTable<Model.Znak>();
+                }
+            }
+
+        }
+
+        private async Task<bool> FileExists(string fileName)
+        {
+            bool result = false;
+            try
+            {
+                StorageFile store = await ApplicationData.Current.LocalFolder.GetFileAsync(fileName);
+                result = true;
+            }
+            catch
+            {
+            }
+
+            return result;
         }
 
         // Code to execute when the application is launching (eg, from Start)
